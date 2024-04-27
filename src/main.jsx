@@ -48,7 +48,8 @@ const router = createHashRouter([
     ]
   }
 ], {
-  basename: import.meta.env.PROD ? site : ''
+  basename: import.meta.env.DEV ? '' : site
+  // basename: site
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(

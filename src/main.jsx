@@ -16,7 +16,7 @@ import ErrorPage from './ErrorPage'
 import Header from './Header'
 import Footer from './Footer'
 
-const site = import.meta.env.BASE_URL
+// const site = import.meta.env.BASE_URL
 
 
 function Layout() {

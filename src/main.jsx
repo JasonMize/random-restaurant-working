@@ -48,7 +48,7 @@ const router = createBrowserRouter([
     ]
   }
 ], {
-  basename: site
+  // basename: site
   // basename: import.meta.env.DEV ? '' : site
 })
 

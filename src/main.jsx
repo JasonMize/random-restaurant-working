@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
   Outlet,
 } from 'react-router-dom'
@@ -31,7 +31,7 @@ function Layout() {
   )
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <Layout />,
     errorElement: <ErrorPage />,
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
     ]
   }
 ], {
-  basename: site
+  basename: import.meta.env.PROD ? site : ''
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -6,9 +6,7 @@
   "homepage": "https://github.com/JasonMize/random-restaurant-working",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "deploy": "gh-pages -d dist",
-    "preview-build": "vite preview"
+    "build": "vite build"
   },
   "dependencies": {
     "axios": "^1.6.8",
